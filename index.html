@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiểnthịsốnguyên</title>
+</head>
+<body>
+<p id="show"></p>
+</body>
+</html>
+<script>
+    let numbers=parseInt(prompt('nhập số:'));
+    let count1=0;
+    let N=2;
+
+    for (count1=0;count1<numbers;){
+            let count2=0;
+            for (let a=1;a<=N;a++){
+                if (N%a==0){
+                    count2++;
+                }
+            }
+            if (count2==2){
+                document.getElementById('show').innerHTML+=N+"<br>";
+                count1++;
+            }
+            N++;
+    }
+
+
+
+
+</script>
