@@ -14,13 +14,14 @@
     let N=2;
 
     for (demHienThiSoLan=0;demHienThiSoLan<numbers;){
-            let soLanChiaHet=0;
+            let demSoLanChiaHet=0;
             for (let i=1;i<=N;i++){
+                // số nguyên tố chỉ chia hết cho 1 và chính nó => số lần chia hết =2 thì là số nguyên tố
                 if (N%i==0){
-                    soLanChiaHet++;
+                    demSoLanChiaHet++;
                 }
             }
-            if (soLanChiaHet==2){
+            if (demSoLanChiaHet==2){
                 document.getElementById('show').innerHTML+=N+"<br>";
                 demHienThiSoLan++;
             }
