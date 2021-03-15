@@ -9,20 +9,20 @@
 </body>
 </html>
 <script>
-    let numbers=parseInt(prompt('nhập số:'));
-    let count1=0;
+    let numbers=parseInt(prompt('nhập số lượng số nguyên tố cần in ra:'));
+    let demHienThiSoLan;
     let N=2;
 
-    for (count1=0;count1<numbers;){
-            let count2=0;
-            for (let a=1;a<=N;a++){
-                if (N%a==0){
-                    count2++;
+    for (demHienThiSoLan=0;demHienThiSoLan<numbers;){
+            let soLanChiaHet=0;
+            for (let i=1;i<=N;i++){
+                if (N%i==0){
+                    soLanChiaHet++;
                 }
             }
-            if (count2==2){
+            if (soLanChiaHet==2){
                 document.getElementById('show').innerHTML+=N+"<br>";
-                count1++;
+                demHienThiSoLan++;
             }
             N++;
     }
